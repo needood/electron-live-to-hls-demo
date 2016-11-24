@@ -1,0 +1,39 @@
+{
+  "name": "demo-recode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-darwin": "electron-packager . lalala --platform=darwin",
+    "build-win": "electron-packager . lalala --platform=win32",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-syntax-jsx": "^6.13.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-snabbdom-jsx": "^0.4.0",
+    "electron-packager": "^8.0.0",
+    "gulp": "^3.9.1",
+    "rollup": "^0.35.11",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^5.0.3",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "uglify-js": "^2.7.3"
+  },
+  "dependencies": {
+    "electron": "^1.4.1",
+    "handlebars": "^4.0.5",
+    "lamejs": "^1.1.0",
+    "nedb": "^1.8.0",
+    "node-notifier": "^4.6.1",
+    "noodle": "git+https://github.com/tamamaxox/noodle.git",
+    "request": "^2.75.0",
+    "snabbdom": "^0.5.3",
+    "websocket": "^1.0.23"
+  }
+}

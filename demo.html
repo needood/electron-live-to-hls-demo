@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="file-list"></div>
+    <button onclick="importFiles()">打开文件</button>
+    <!--
+    <input id="file" type="file" />
+    <button onclick="recorder.background(getFile())">播放背景音乐</button>
+     -->
+    <button onclick="recorder.start()">开始录音</button>
+    <button onclick="recorder.stop()">暂停录音</button>
+    <button onclick="recorder.bgming(true)">背景音乐开</button>
+    <button onclick="recorder.bgming(false)">背景音乐关</button>
+    <button onclick="recorder.echo(true)">反馈声音开</button>
+    <button onclick="recorder.echo(false)">反馈声音关</button>
+    <canvas id="canvasOne" width="400" height="75"></canvas>
+    <script src="./lame.min.js"></script>
+    <script src="./dist/bundle.js"></script>
+    <script src="./src/appClient/index.js"></script>
+    <script>
+        /*
+        function getFile(){
+            return document.getElementById('file').files[0];
+        }
+        */
+        recorder.connectSpectrum(document.getElementById("canvasOne"));
+    </script>
+</body>
+
+</html>

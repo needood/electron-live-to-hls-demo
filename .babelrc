@@ -1,0 +1,8 @@
+{
+    "plugins": ["babel-snabbdom-jsx"],
+    "presets": ["es2015-rollup", "stage-0"],
+    "ignore": [
+        "dist/*.js",
+        "packages/**/*.js"
+    ]
+}
